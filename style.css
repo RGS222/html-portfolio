@@ -1,0 +1,17 @@
+
+
+/* limit paragraph width to 700px */
+p {
+    width:95vw;
+}
+h4 {
+    width:95vw;
+}
+@media (width > 735px) {
+    p {
+        width:700px;
+    }
+    h4 {
+        width:700px;
+    }
+}
