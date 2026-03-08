@@ -2,16 +2,58 @@
 
 /* limit paragraph width to 700px */
 p {
-    width:95vw;
+    width:85vw - 100px;
 }
 h4 {
-    width:95vw;
+    width:85vw - 100px;
 }
-@media (width > 735px) {
+a {
+    text-decoration: none;
+    color:inherit
+}
+@media (width > 800px) {
     p {
         width:700px;
     }
     h4 {
         width:700px;
     }
+}
+.project-logo {
+    height: 120px;
+    padding: 20px;
+}
+.center-content {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box {
+    display: grid;
+    place-items: center;
+    background-color:navy;
+    color: white;
+    text-align: center;
+    width: 140px;
+    padding: 20px;
+    border: 2px solid black;  
+    border-radius: 15px;
+    margin: 10px;
+}
+.grid-container-2 {
+    /* use to align div on the same row, left aligned */
+    display: grid;
+    /* Defines two columns of equal fractional units (fr) */
+    grid-template-columns: 200px 200px;
+    /* adds space between the divs */
+    grid-gap: 20px; 
+}
+.grid-container-3 {
+    /* use to align div on the same row, centre aligned */
+    display: grid;
+    /* Defines three columns of equal fractional units (fr) */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* adds space between the divs */
+    grid-gap: 20px; 
 }
