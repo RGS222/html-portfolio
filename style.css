@@ -57,3 +57,8 @@ a {
     /* adds space between the divs */
     grid-gap: 20px; 
 }
+.flex-box-two-ends {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensures it fills the container */
+}
