@@ -34,8 +34,7 @@ a {
     margin-bottom: 20px;
 }
 .box {
-    display: grid;
-    place-items: center;
+    display: inline-block;
     background-color:navy;
     color: white;
     text-align: center;
@@ -47,22 +46,6 @@ a {
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
-}
-.grid-container-2 {
-    /* use to align div on the same row, left aligned */
-    display: grid;
-    /* Defines two columns of equal fractional units (fr) */
-    grid-template-columns: 200px 200px;
-    /* adds space between the divs */
-    grid-gap: 20px; 
-}
-.grid-container-3 {
-    /* use to align div on the same row, centre aligned */
-    display: grid;
-    /* Defines three columns of equal fractional units (fr) */
-    grid-template-columns: 1fr 1fr 1fr;
-    /* adds space between the divs */
-    grid-gap: 20px; 
 }
 .flex-box-two-ends {
   display: flex;
