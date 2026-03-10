@@ -1,4 +1,8 @@
-
+h1, h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 
 /* limit paragraph width to 700px */
 p {
@@ -40,6 +44,9 @@ a {
     border: 2px solid black;  
     border-radius: 15px;
     margin: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .grid-container-2 {
     /* use to align div on the same row, left aligned */
