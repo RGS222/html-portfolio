@@ -28,10 +28,16 @@ a {
     padding: 20px;
 }
 .center-content {
-    display: grid;
-    place-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+}
+/* make items flow vertical */
+@media (width < 650px) {
+    .center-content>div {
+        display: flex;
+        flex-flow: column nowrap;
+    }
 }
 .box {
     display: inline-block;
