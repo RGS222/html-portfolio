@@ -30,15 +30,15 @@ h1, h2 {
 .front-page-title {
     display: grid;
     width: 475px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 40px 50px 70px;
-    padding-bottom: 20px;
+    grid-template-columns: 250px 120px;
+    grid-template-rows: 50px 60px 70px;
+
 }
 body>.center-content>img{
     grid-row: span 3;
 }
 /* make items flow vertical */
-@media (width < 650px) {
+@media (width < 720px) {
     .center-content>div {
         display: flex;
         flex-flow: column nowrap;
@@ -46,6 +46,8 @@ body>.center-content>img{
     .front-page-title {
         display: flex;
         flex-direction: column;
+        width: 240px;
+        align-items: center;
     }
 }
 .box {
