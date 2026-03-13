@@ -32,7 +32,7 @@ h1, h2 {
     width: 475px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 40px 50px 70px;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 body>.center-content>img{
     grid-row: span 3;
