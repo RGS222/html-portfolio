@@ -52,7 +52,17 @@ h2 {
 }
 #front-page-projects {
     display: flex;
-    gap: 60px;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+#front-page-projects div {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
 }
 #front-page>div>img{
     grid-row: span 3;
@@ -71,7 +81,7 @@ h2 {
         align-items: center;
     }
     #front-page-projects {
-        gap: 0px;
+        gap: 20px;
     }
 }
 .box {
