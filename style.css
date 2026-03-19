@@ -106,3 +106,21 @@ h2 {
 #contact-info .icon-square {
     border-radius: 5px;
 }
+label {
+    color: white;
+}
+.pure-group input,
+.pure-group textarea {
+    font-family: inherit;
+}
+.pure-group textarea {
+    width: 40%;
+    min-width: 200px;
+    max-width: 400px;
+}
+.button-success {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
