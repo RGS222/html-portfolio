@@ -1,0 +1,23 @@
+
+label {
+    color: white;
+}
+
+.pure-group input,
+.pure-group textarea {
+    font-family: inherit;
+    width: 40%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.button-success {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.honeypot-field {
+    display: none;
+}

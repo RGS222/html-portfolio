@@ -1,0 +1,79 @@
+#front-page {
+    align-items: center;
+    justify-self: center;
+}
+
+#front-page>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#front-page-title {
+    display: grid;
+    /* width: 475px; */
+    width: clamp(475px, 30vw, 800px);
+    grid-template-columns: clamp(250px, 20vw, 700px) clamp(120px, 15vw, 400px);
+    grid-template-rows: clamp(40px, 4vw, 150px) clamp(40px, 4vw, 150px) clamp(100px, 6vw, 250px);
+}
+
+#front-page-title img {
+    width: clamp(200px, 15vw, 600px)
+}
+
+#front-page-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+#projects,
+#info {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+/*frame around project*/
+.project-frame {
+    display: flex;
+    height: clamp(130px, 12vw, 400px);
+    width: clamp(130px, 12vw, 400px);
+    border: clamp(5px, 0.4vw, 10px) solid white;
+    border-radius: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+#front-page-title>img {
+    grid-row: span 3;
+}
+
+/* make items flow vertical */
+@media (width < 750px) {
+
+    #front-page-title,
+    #projects,
+    #info {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .front-page-title {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        align-items: center;
+    }
+
+    #projects,
+    #info {
+        gap: 20px;
+    }
+
+}

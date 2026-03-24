@@ -1,15 +1,15 @@
+
 body {
-    background-image: url('./assets/images/background.png');
+    background-image: url('../assets/images/background.png');
     background-repeat: no-repeat;
     background-position: center; /* Centers the image */
     background-size: cover; /* Stretches the image to cover the screen */
-    width: vw;
-    height: vh; /* Ensures the body covers the full viewport height */
-    margin: 0; /* Removes default browser margin */
+    margin: 0;
     padding: 40px;
 }
 p {
     color: white;
+    font-size: clamp(1.0rem, 1.5vw, 2.5rem);
 }
 h1, h2 {
     font-family: "Ubuntu", sans-serif;
@@ -18,78 +18,50 @@ h1, h2 {
 }
 h1 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: clamp(2rem, 2.7vw, 4.5rem);
 }
 h2 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, calc(2vw + 0rem), 3.2rem);
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.lead {
-    color:white;
-    font-size: 1rem;
+h3 {
+    color:aqua;
+}
+h4 {
+    color:aquamarine;
+}
+ul ul h4 {
+    color:greenyellow
+}
+hr {
+    width: 100%;
+    margin-bottom: 20px;
 }
 /* limit paragraph width to 700px */
 .text-container {
-    max-width: 700px;
+    width: clamp(700px, 60vw, 1500px);
+}
+@media (max-width: 750px) {
+    .text-container {
+        width: 100%
+    }
 }
 .project-logo {
-    height: 120px;
+    height: clamp(100px, 10vw, 350px);
     padding: 20px;
-}
-#front-page>div {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items:center;
-    justify-self: center;
-}
-#front-page-title {
-    display: grid;
-    width: 475px;
-    grid-template-columns: 250px 120px;
-    grid-template-rows: 50px 60px 70px;
-}
-#front-page-projects {
-    display: flex;
-    gap: 50px;
-    margin-bottom: 20px;
-}
-#front-page-projects div {
-    display: flex;
-    height: 150px;
-    width: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-}
-#front-page>div>img{
-    grid-row: span 3;
-}
-/* make items flow vertical */
-@media (width < 720px) {
-    #front-page>div>div {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-    .front-page-title {
-        display: flex;
-        flex-direction: column;
-        width: 240px;
-        align-items: center;
-    }
-    #front-page-projects {
-        gap: 20px;
-    }
+    box-sizing: unset;
 }
 .box {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:navy;
     color: white;
     text-align: center;
-    width: 140px;
+    width: clamp(10rem, 16vw, 25rem);
+    height: clamp(5rem, 8vw, 12.5rem);
     padding: 20px;
     border-radius: 15px;
     margin: 10px;
@@ -100,28 +72,8 @@ h2 {
   justify-content: space-between;
   width: 100%; /* Ensures it fills the container */
 }
-#contact-info img {
-    height:30px;
-}
-#contact-info .icon-square {
-    border-radius: 5px;
-}
-label {
-    color: white;
-}
-.pure-group input,
-.pure-group textarea {
-    font-family: inherit;
-    width: 40%;
-    min-width: 200px;
-    max-width: 400px;
-}
-.button-success {
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    margin: 0;
-}
-.honeypot-field {
-    display: none;
+.project-demo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: clamp(500px, 60vw, 1500px)
 }
