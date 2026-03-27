@@ -1,18 +1,21 @@
 .resume-box {
-    width: clamp(200px, 16vw, 400px);
+    width: clamp(150px, 20vw, 400px);
     border: 3px solid white;
     border-radius: 25px;
-
 }
 
 .resume-box h2 {
-    font-size: clamp(1.2rem, 1.8vw, 3rem);
+    font-size: clamp(1.0rem, 2.2vw, 3rem);
 }
 
 #resume-content {
     display: grid;
-    grid-template-columns: clamp(250px, 20vw, 450px) auto;
+    grid-template-columns: clamp(180px, 25vw, 450px) auto;
     grid-auto-rows: minmax(600px, auto);
+}
+
+#resume-menu>div {
+    padding-left: 0 !important;
 }
 
 #resume-details {
@@ -20,6 +23,7 @@
     border-radius: 25px;
     margin-top: 20px;
     padding: 20px 10px;
+    max-width: 2000px;
 }
 
 #resume-details li::marker{
@@ -55,6 +59,14 @@
 
 /* make items flow vertical */
 @media (width < 750px) {
+    .resume-box {
+        width: clamp(170px, 35vw, 300px);
+    }
+
+    .resume-box h2 {
+        font-size: clamp(1.2rem, 3.6vw, 3rem);
+    }
+    
     #resume-content {
         grid-template-columns: 1fr;
         grid-template-rows: auto 600px;
@@ -74,5 +86,9 @@
 
     .menu-item {
         margin-left: 0;
+    }
+
+    .scrollable-container {
+        height: 360px;
     }
 }

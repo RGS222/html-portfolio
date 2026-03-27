@@ -19,3 +19,19 @@ $(".menu-item").click(function(event) {
         $("#carouselIndicators2").carousel(0);
     }
 });
+
+
+$("#resume-menu .btn").click(function(event) {
+    //auto collapse other menu
+    if ($(this).hasClass("exp")) {
+        $("#resume-menu .sk").siblings(".collapse").collapse("hide");
+    } else if ($(this).hasClass("sk")) {
+        $("#resume-menu .exp").siblings(".collapse").collapse("hide");
+    } else {
+        $("#resume-menu .sk").siblings(".collapse").collapse("hide");
+        $("#resume-menu .exp").siblings(".collapse").collapse("hide");
+    }
+    
+    //select first item when menu expands
+    $(this).siblings().find(".menu-item").first().trigger("click");
+})
