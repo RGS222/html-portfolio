@@ -1,0 +1,78 @@
+.resume-box {
+    width: clamp(200px, 16vw, 400px);
+    border: 3px solid white;
+    border-radius: 25px;
+
+}
+
+.resume-box h2 {
+    font-size: clamp(1.2rem, 1.8vw, 3rem);
+}
+
+#resume-content {
+    display: grid;
+    grid-template-columns: clamp(250px, 20vw, 450px) auto;
+    grid-auto-rows: minmax(600px, auto);
+}
+
+#resume-details {
+    border: 3px solid white;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 20px 10px;
+}
+
+#resume-details li::marker{
+    color: white;
+}
+
+#resume-details p {
+    font-size: clamp(1.2rem, 1.5vw, 2.5rem);
+}
+
+.menu-item {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: clamp(1.0rem, 1.5vw, 2.5rem);
+    margin-left: 3rem;
+}
+
+.scrollable-container {
+    height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.scrollable-container h4 {
+    margin-bottom: 10px;
+    color:greenyellow
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: aquamarine;
+}
+
+/* make items flow vertical */
+@media (width < 750px) {
+    #resume-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 600px;
+        grid-auto-columns: minmax(600px, auto);
+    }
+
+    #resume-menu ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    #resume-menu li {
+        display: inline-block;
+        justify-self: center;
+    }
+
+    .menu-item {
+        margin-left: 0;
+    }
+}
