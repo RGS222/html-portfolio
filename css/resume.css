@@ -73,10 +73,18 @@
         grid-auto-columns: minmax(600px, auto);
     }
 
-    #resume-menu ul {
+    #resume-menu>div>ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
+    }
+
+    #exp-collapse>ul,
+    #sk-collapse>ul {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     #resume-menu li {

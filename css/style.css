@@ -6,6 +6,7 @@ body {
     background-size: cover; /* Stretches the image to cover the screen */
     margin: 0;
     padding: 40px;
+    width: 100vw;
 }
 p {
     color: white;
@@ -44,6 +45,9 @@ hr {
     width: clamp(700px, 60vw, 1500px);
 }
 @media (max-width: 750px) {
+    body {
+        padding:20px;
+    }
     .text-container {
         width: 100%
     }
