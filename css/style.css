@@ -42,16 +42,9 @@ hr {
 }
 /* limit paragraph width to 700px */
 .text-container {
-    width: clamp(700px, 60vw, 1500px);
+    width: clamp(700px, 55vw, 1000px);
 }
-@media (max-width: 750px) {
-    body {
-        padding:20px;
-    }
-    .text-container {
-        width: 100%
-    }
-}
+
 .project-logo {
     height: clamp(100px, 10vw, 350px);
     padding: 20px;
@@ -79,5 +72,25 @@ hr {
 .project-demo {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: clamp(500px, 60vw, 1500px)
+    width: clamp(700px, 55vw, 1000px)
+}
+
+.video-demo {
+    aspect-ratio: initial;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 750px) {
+    body {
+        padding: 20px;
+    }
+
+    .text-container {
+        width: 100%
+    }
+
+    .project-demo {
+        width: 100%
+    }
 }
