@@ -20,7 +20,6 @@ $(".menu-item").click(function(event) {
     }
 });
 
-
 $("#resume-menu .btn").click(function(event) {
     //auto collapse other menu
     if ($(this).hasClass("exp")) {
@@ -35,3 +34,8 @@ $("#resume-menu .btn").click(function(event) {
     //select first item when menu expands
     $(this).siblings().find(".menu-item").first().trigger("click");
 })
+
+//show objective when resume page is first loaded
+$(document).ready(function() {
+    $("#objective").trigger("click");
+});
