@@ -46,7 +46,7 @@ hr {
 }
 
 .project-logo {
-    height: clamp(100px, 10vw, 350px);
+    height: clamp(100px, 9.5vw, 350px);
     padding: 20px;
     box-sizing: unset;
 }

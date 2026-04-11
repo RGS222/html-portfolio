@@ -12,7 +12,6 @@
 
 #front-page-title {
     display: grid;
-    /* width: 475px; */
     width: clamp(475px, 30vw, 800px);
     grid-template-columns: clamp(250px, 20vw, 700px) clamp(120px, 15vw, 400px);
     grid-template-rows: clamp(40px, 4vw, 150px) clamp(40px, 4vw, 150px) clamp(100px, 6vw, 250px);
@@ -41,8 +40,6 @@
 /*frame around project*/
 .project-frame {
     display: flex;
-    height: clamp(130px, 12vw, 400px);
-    width: clamp(130px, 12vw, 400px);
     border: clamp(5px, 0.4vw, 10px) solid white;
     border-radius: 15%;
     align-items: center;
@@ -51,6 +48,17 @@
 
 #front-page-title>img {
     grid-row: span 3;
+}
+
+.project-block {
+    width: clamp(130px, 13vw, 400px);
+    text-align: center;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: clamp(0.8rem, 1.2vw, 1.8rem);
+    margin: 15px auto;
 }
 
 /* make items flow vertical */
