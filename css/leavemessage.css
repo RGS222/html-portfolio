@@ -21,3 +21,16 @@ label {
 .honeypot-field {
     display: none;
 }
+
+#message-fields {
+    display: flex;
+    justify-content: center;
+}
+
+#message-fields>div {
+    width: 30vw;
+}
+
+#message-fields fieldset {
+    width: 100vw;
+}
