@@ -28,7 +28,7 @@ label {
 }
 
 #message-fields>div {
-    width: 30vw;
+    width: clamp(300px, 50vw, 700px);
 }
 
 #message-fields fieldset {
